@@ -1,0 +1,30 @@
+name: Build Vue 3 Project
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build_vue:
+    runs-on: ubuntu-latest
+    name: Build
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2.2.2
+        with:
+          run_install: true
+      - name: Build
+        run: pnpm build-only --base=/${{ github.event.repository.name }}/
+      - name: Link 404
+        run: cd ./dist && ln -s index.html 404.html
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          force_orphan: true
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: deploy

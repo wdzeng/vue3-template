@@ -1,0 +1,29 @@
+@import 'base.scss';
+
+#app {
+  @apply container mx-auto p-8 font-normal;
+  max-width: 1280px;
+}
+
+a,
+.green {
+  @apply text-green-500 no-underline;
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    @apply text-green-700 dark:text-green-300;
+  }
+}
+
+@screen lg {
+  body {
+    @apply flex place-items-center;
+  }
+
+  #app {
+    @apply grid h-screen py-16 px-8;
+    grid-template-columns: 1fr 1fr;
+  }
+}
