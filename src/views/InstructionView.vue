@@ -133,8 +133,7 @@
 
 <style lang="scss">
 .inst {
-  // @apply grid grid-cols-2 gap-4;
-  @apply py-16;
+  @apply py-16 lg:py-0;
 
   ul {
     @apply relative left-[1.25em] list-[circle];
