@@ -11,6 +11,7 @@ This is a template [Vue 3](https://vuejs.org/) project, integrated with:
 - [SCSS](https://sass-lang.com/)
 - [Tailwind CSS v3](https://tailwindcss.com/)
 - [Sweetalert2](https://sweetalert2.github.io/)
+- [Storybook](https://storybook/)
 - [Pnpm](https://pnpm.io/)
 - [Prettier](https://prettier.io/)
 - [ESLint](https://eslint.org/)
@@ -63,4 +64,10 @@ pnpm test:unit
 
 ```sh
 pnpm lint
+```
+
+### Development with [Storybook](https://storybook.js.org/)
+
+```sh
+pnpm storybook
 ```
