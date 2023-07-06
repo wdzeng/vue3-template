@@ -23,7 +23,7 @@ a,
   }
 
   #app {
-    @apply grid h-screen py-16 px-8;
+    @apply grid h-screen px-8 py-16;
     grid-template-columns: 1fr 1fr;
   }
 }

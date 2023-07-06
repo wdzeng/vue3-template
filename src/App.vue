@@ -41,10 +41,10 @@ header {
       @apply mt-8 w-full text-center;
       font-size: 12pt;
 
-      @apply lg:-ml-4 lg:mt-4 lg:py-4 lg:px-0 lg:text-left lg:text-base;
+      @apply lg:-ml-4 lg:mt-4 lg:px-0 lg:py-4 lg:text-left lg:text-base;
 
       a {
-        @apply inline-block py-0 px-4;
+        @apply inline-block px-4 py-0;
         border-left: 1px solid var(--color-border);
 
         &.router-link-exact-active {
