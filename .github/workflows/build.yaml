@@ -12,9 +12,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Install pnpm
-        uses: pnpm/action-setup@v2.2.2
+        uses: pnpm/action-setup@v2
         with:
           run_install: true
+      - name: Run type checking
+        run: pnpm type-check
+      - name: Run unittest
+        run: pnpm test:unit --run
       - name: Build
         run: pnpm build-only --base=/${{ github.event.repository.name }}/
       - name: Link 404
