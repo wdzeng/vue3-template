@@ -131,6 +131,15 @@
   </div>
 </template>
 
+<script lang="ts" setup>
+import CardItem from '@/components/TheCard.vue'
+import Swal from 'sweetalert2'
+
+function emitAlert() {
+  Swal.fire('Hello fzhong!')
+}
+</script>
+
 <style lang="scss">
 .inst {
   @apply py-16 lg:py-0;
@@ -169,12 +178,3 @@
   }
 }
 </style>
-
-<script lang="ts" setup>
-import CardItem from '@/components/TheCard.vue'
-import Swal from 'sweetalert2'
-
-function emitAlert() {
-  Swal.fire('Hello fzhong!')
-}
-</script>
