@@ -19,27 +19,34 @@ This is a template [Vue 3](https://vuejs.org/) project, integrated with:
 
 ## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Use IDE [VSCode](https://code.visualstudio.com/) for development.
 
-## Type Support for `.vue` Imports in TS
+### TypeScript Setup
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+You must make VSCode to use Typescript which is installed on node_modules instead of a builtin one. Open command palette
+(ctrl + shift + p) and search for `TypeScript: Select TypeScript Version...` to update the settings.
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+### Vue.js Development Setup
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+Install VSCode extensions [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) +
+[TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-## Customize configuration
+You must make VSCode to use Typescript which is installed on node_modules instead of a builtin one. Open command palette
+(ctrl + shift + p) and search for `Volar: Select TypeScript Version...` to update the settings.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+### Formatter and Linter Setup
+
+Install VSCode extension [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and set it
+as default formatter for all .vue and .ts files in VSCode. Though Prettier is installed on `pnpm i`, you don't need to
+install or enable [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) extension,
+since we are not using it with VSCode.
+
+## Development Backend
 
 ## Project Setup
 
 ```sh
-pnpm install
+pnpm i
 ```
 
 ### Compile and Hot-Reload for Development
