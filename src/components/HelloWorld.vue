@@ -9,14 +9,6 @@
   </div>
 </template>
 
-<script setup lang="ts">
-// In the setup script, we do not need to explicitly import `defineProps` or `defineEmits`. They are compiler macros
-// only usable inside the setup script.
-defineProps<{
-  msg: string
-}>()
-</script>
-
 <style lang="scss" scoped>
 .greetings {
   h1 {
@@ -32,3 +24,11 @@ defineProps<{
   }
 }
 </style>
+
+<script setup lang="ts">
+// In the setup script, we do not need to explicitly import `defineProps` or `defineEmits`. They are compiler macros
+// only usable inside the setup script.
+defineProps<{
+  msg: string
+}>()
+</script>

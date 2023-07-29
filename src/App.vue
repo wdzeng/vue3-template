@@ -17,11 +17,6 @@
   <RouterView class="lg:max-h-full lg:overflow-y-scroll" />
 </template>
 
-<script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from '@/components/HelloWorld.vue'
-</script>
-
 <style lang="scss" scoped>
 header {
   @apply leading-normal;
@@ -67,3 +62,8 @@ header {
   }
 }
 </style>
+
+<script setup lang="ts">
+import { RouterLink, RouterView } from 'vue-router'
+import HelloWorld from '@/components/HelloWorld.vue'
+</script>

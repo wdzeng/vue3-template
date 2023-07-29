@@ -6,12 +6,6 @@
   </div>
 </template>
 
-<script setup lang="ts">
-defineProps<{
-  title: string
-}>()
-</script>
-
 <style lang="scss">
 // https://flowbite.com/docs/components/card/
 .card {
@@ -26,3 +20,9 @@ defineProps<{
   }
 }
 </style>
+
+<script setup lang="ts">
+defineProps<{
+  title: string
+}>()
+</script>

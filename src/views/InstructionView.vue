@@ -51,8 +51,7 @@
         <li>
           <a
             href="https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin"
-            rel="noopener
-            noreferrer"
+            rel="noopener noreferrer"
             target="_blank"
             >TypeScript Vue Plugin for Volar</a
           >
@@ -129,15 +128,6 @@
   </div>
 </template>
 
-<script lang="ts" setup>
-import SimpleCard from '@/components/SimpleCard.vue'
-import Swal from 'sweetalert2'
-
-function emitAlert() {
-  Swal.fire('Hello fzhong!')
-}
-</script>
-
 <style lang="scss">
 .inst {
   @apply py-16 lg:py-0;
@@ -176,3 +166,12 @@ function emitAlert() {
   }
 }
 </style>
+
+<script lang="ts" setup>
+import SimpleCard from '@/components/SimpleCard.vue'
+import Swal from 'sweetalert2'
+
+function emitAlert() {
+  Swal.fire('Hello fzhong!')
+}
+</script>
