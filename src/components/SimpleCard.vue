@@ -2,7 +2,7 @@
   <div class="card">
     <h2>{{ title }}</h2>
     <div class="card-body"><slot></slot></div>
-    <div><p class="mt-2 text-end italic text-gray-400">This is a card component.</p></div>
+    <div><p class="mt-2 text-end italic text-gray-400">This is a simple card component.</p></div>
   </div>
 </template>
 

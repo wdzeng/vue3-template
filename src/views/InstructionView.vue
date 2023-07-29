@@ -1,6 +1,6 @@
 <template>
   <div class="inst">
-    <CardItem title="Awesome Vue Project">
+    <SimpleCard title="Awesome Vue Project">
       <p>
         This template is using <a target="_blank" href="https://vuejs.org/" rel="noreferrer noopener">Vue 3</a> and
         <a target="_blank" href="https://vitejs.dev/" rel="noreferrer noopener">Vite</a> with
@@ -15,8 +15,8 @@
         available!
       </p>
       <p><button class="alert" @click="emitAlert">Alert!</button></p>
-    </CardItem>
-    <CardItem title="Development with VSCode">
+    </SimpleCard>
+    <SimpleCard title="Development with VSCode">
       <template #title></template>
       <p>
         Recommend to develop with
@@ -82,8 +82,8 @@
         as formatter for all file types, including Vue component, TypeScript and SCSS. Do not use volar, it is
         incompatible with tailwindcss.
       </p>
-    </CardItem>
-    <CardItem title="Development Commands">
+    </SimpleCard>
+    <SimpleCard title="Development Commands">
       <p>
         Assumed you are using <a target="_blank" href="https://pnpm.io/" rel="noreferrer noopener">pnpm</a> as package
         manager.
@@ -96,8 +96,8 @@
       <code class="block">pnpm build</code>
       <p>Lint:</p>
       <code class="block">pnpm lint</code>
-    </CardItem>
-    <CardItem title="Tips">
+    </SimpleCard>
+    <SimpleCard title="Tips">
       <template #title>Tips</template>
       <p>Make use of vue typescript feature.</p>
       <ul>
@@ -125,12 +125,12 @@
         </li>
       </ul>
       <p>Don't forget <code>noreferrer</code> and <code>noopener</code> in anchors!</p>
-    </CardItem>
+    </SimpleCard>
   </div>
 </template>
 
 <script lang="ts" setup>
-import CardItem from '@/components/TheCard.vue'
+import SimpleCard from '@/components/SimpleCard.vue'
 import Swal from 'sweetalert2'
 
 function emitAlert() {
