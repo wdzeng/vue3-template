@@ -1,7 +1,6 @@
 <template>
   <div class="inst">
-    <CardItem>
-      <template #title>Awesome Vue Project</template>
+    <CardItem title="Awesome Vue Project">
       <p>
         This template is using <a target="_blank" href="https://vuejs.org/" rel="noreferrer noopener">Vue 3</a> and
         <a target="_blank" href="https://vitejs.dev/" rel="noreferrer noopener">Vite</a> with
@@ -17,11 +16,11 @@
       </p>
       <p><button class="alert" @click="emitAlert">Alert!</button></p>
     </CardItem>
-    <CardItem>
-      <template #title>Development with VS&nbsp;Code</template>
+    <CardItem title="Development with VSCode">
+      <template #title></template>
       <p>
         Recommend to develop with
-        <a target="_blank" rel="noreferrer noopener" href="https://code.visualstudio.com/">VS&nbsp;Code</a> with these
+        <a target="_blank" rel="noreferrer noopener" href="https://code.visualstudio.com/">VSCode</a> with these
         extension:
       </p>
       <ul>
@@ -84,8 +83,7 @@
         incompatible with tailwindcss.
       </p>
     </CardItem>
-    <CardItem>
-      <template #title>Development Commands</template>
+    <CardItem title="Development Commands">
       <p>
         Assumed you are using <a target="_blank" href="https://pnpm.io/" rel="noreferrer noopener">pnpm</a> as package
         manager.
@@ -99,7 +97,7 @@
       <p>Lint:</p>
       <code class="block">pnpm lint</code>
     </CardItem>
-    <CardItem>
+    <CardItem title="Tips">
       <template #title>Tips</template>
       <p>Make use of vue typescript feature.</p>
       <ul>
