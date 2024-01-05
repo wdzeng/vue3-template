@@ -1,0 +1,1 @@
+import{_ as t,o as s,c as o,a as e}from"./index-1c129d47.js";const c="/vue3-template/assets/fzhong-70db60b8.webp";const _={},n={class:"about"},a=e("h1",null,"This is an about page",-1),i=e("p",{class:"text-center"},[e("img",{class:"inline-block",src:c,width:"360",height:"360"})],-1),r=[a,i];function l(d,h){return s(),o("div",n,r)}const p=t(_,[["render",l]]);export{p as default};
