@@ -22,7 +22,7 @@
     <a href="https://github.com/johnsoncodehk/volar" target="_blank" rel="noopener noreferrer">Volar</a>. If you need to
     test your components and web pages, check out
     <a href="https://www.cypress.io/" target="_blank" rel="noopener noreferrer">Cypress</a> and
-    <a href="https://on.cypress.io/component" target="_blank">Cypress Component Testing</a>.
+    <a href="https://on.cypress.io/component" target="_blank" rel="noopener noreferrer">Cypress Component Testing</a>.
 
     <br />
 
