@@ -1,0 +1,1 @@
+import{_ as s,o as t,c as o,a as e}from"./index-CMixDDgL.js";const c="/vue3-template/assets/fzhong-CkghnUHC.webp",n={},a={class:"about"},_=e("h1",null,"This is an about page",-1),i=e("p",{class:"text-center"},[e("img",{class:"inline-block",src:c,width:"360",height:"360"})],-1),r=[_,i];function h(l,d){return t(),o("div",a,r)}const u=s(n,[["render",h]]);export{u as default};
