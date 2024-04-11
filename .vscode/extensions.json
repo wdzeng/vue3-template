@@ -1,8 +1,7 @@
 {
   "recommendations": [
     // Extensions for vite and vue.js
-    "Vue.volar",
-    "Vue.vscode-typescript-vue-plugin",
+    "vue.volar",
     "antfu.vite",
     // Extensions for linting
     "dbaeumer.vscode-eslint",
